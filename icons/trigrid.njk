@@ -1,0 +1,22 @@
+
+{% set size = 400 %}
+{% set xx = 128 %}
+{% set gap = 8 %}
+
+{% set rx = 5 %}
+{% set red = "#dc2626" %}
+{% set black = "#222222" %}
+
+<svg width="{{ size }}" height="{{ size }}" xmlns="http://www.w3.org/2000/svg">
+	<rect width="{{ xx }}" height="{{ xx }}" x="{{ 0 }}" y="{{ 0 }}" fill="{{ red }}" rx="{{ rx }}" />
+	<rect width="{{ xx }}" height="{{ xx }}" x="{{ 0 }}" y="{{ 0 + xx + gap }}" fill="{{ red }}" rx="{{ rx }}" />
+	<rect width="{{ xx }}" height="{{ xx }}" x="{{ 0 }}" y="{{ 0 + xx + gap + xx + gap }}" fill="{{ red }}" rx="{{ rx }}" />
+
+	<rect width="{{ xx }}" height="{{ xx }}" x="{{ 0 + xx + gap }}" y="{{ 0 }}" fill="{{ red }}" rx="{{ rx }}" />
+	<rect width="{{ xx }}" height="{{ xx }}" x="{{ 0 + xx + gap }}" y="{{ 0 + xx + gap }}" fill="{{ red }}" rx="{{ rx }}" />
+	<rect width="{{ xx }}" height="{{ xx }}" x="{{ 0 + xx + gap }}" y="{{ 0 + xx + gap + xx + gap }}" fill="{{ red }}" rx="{{ rx }}" />
+
+	<rect width="{{ xx }}" height="{{ xx }}" x="{{ 0 + xx + gap + xx + gap }}" y="{{ 0 }}" fill="{{ red }}" rx="{{ rx }}" />
+	<rect width="{{ xx }}" height="{{ xx }}" x="{{ 0 + xx + gap + xx + gap }}" y="{{ 0 + xx + gap }}" fill="{{ red }}" rx="{{ rx }}" />
+	<rect width="{{ xx }}" height="{{ xx }}" x="{{ 0 + xx + gap + xx + gap }}" y="{{ 0 + xx + gap + xx + gap }}" fill="{{ red }}" rx="{{ rx }}" />
+</svg>
